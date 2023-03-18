@@ -91,15 +91,38 @@
         app:layout_constraintTop_toBottomOf="@+id/image_profile">
 
         <TextView
-            android:id="@+id/info"
+            android:id="@+id/account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/info"
+            android:text="@string/account"
             android:textColor="@color/brand"
             android:textSize="@dimen/text_caption"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/phone_number"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/account"
+            app:layout_constraintTop_toBottomOf="@+id/account" />
+
+        <TextView
+            android:id="@+id/tap_to_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@string/tap_to_change_phone_number"
+            android:textColor="@color/onPrimary"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

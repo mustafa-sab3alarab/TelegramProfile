@@ -14,7 +14,7 @@
                 android:alpha="1" />
             <KeyAttribute
                 motion:motionTarget="@+id/image_profile"
-                motion:framePosition="15"
+                motion:framePosition="12"
                 android:alpha="0" />
             <KeyAttribute
                 motion:motionTarget="@+id/image_profile"

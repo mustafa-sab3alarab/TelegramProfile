@@ -5,6 +5,8 @@
     <string name="content_description_media">image profile</string>
     <string name="status">online</string>
     <string name="name_chanel">Mustafa Sabe Alarab</string>
-    <string name="info">Info</string>
+    <string name="account">Account</string>
     <string name="profile_image">profile image</string>
+    <string name="phone_number">+31 66 55 43 44</string>
+    <string name="tap_to_change_phone_number">Tap to change phone number</string>
 </resources>

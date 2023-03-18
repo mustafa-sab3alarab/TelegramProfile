@@ -10,4 +10,5 @@
     <color name="background">#1C2534</color>
     <color name="dark_gray">#222B3A</color>
     <color name="brand">#2AA5F6</color>
+    <color name="onPrimary">#99FFFFFF</color>
 </resources>
