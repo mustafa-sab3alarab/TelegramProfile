@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <KeyFrameSet >
+            <KeyAttribute
+                motion:motionTarget="@id/big_image"
+                motion:framePosition="15"
+                android:alpha="1" />
+            <KeyAttribute
+                motion:motionTarget="@+id/image_profile"
+                motion:framePosition="15"
+                android:alpha="0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/image_profile"
+                motion:framePosition="100"
+                android:alpha="0" />
+        </KeyFrameSet>
+        <OnSwipe
+            motion:touchAnchorId="@+id/content_layout"
+            motion:dragDirection="dragDown" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            motion:layout_constraintTop_toBottomOf="@+id/image_profile"
+            android:id="@+id/content_layout"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="400dp"
+            motion:layout_constraintTop_toTopOf="@+id/tool_bar"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="0dp"
+            android:id="@+id/big_image" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/big_image"
+            android:layout_width="wrap_content"
+            android:id="@+id/linearLayout"
+            motion:layout_constraintStart_toStartOf="@+id/big_image"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp" />
+        <Constraint
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            motion:layout_constraintTop_toBottomOf="@+id/big_image"
+            android:id="@+id/content_layout"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp" />
+        <Constraint
+            android:layout_height="@dimen/image_circle"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="@+id/big_image"
+            android:layout_width="@dimen/image_circle"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:id="@+id/image_profile"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/tool_bar"
+            android:layout_marginTop="16dp" />
+    </ConstraintSet>
+</MotionScene>

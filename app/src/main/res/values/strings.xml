@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TelegramProfile</string>
+    <string name="more">more</string>
+    <string name="content_description_more">icon more</string>
+    <string name="content_description_media">image profile</string>
+    <string name="status">online</string>
+    <string name="name_chanel">Mustafa Sabe Alarab</string>
+    <string name="info">Info</string>
+    <string name="profile_image">profile image</string>
+</resources>
